@@ -200,6 +200,33 @@ function Homepage() {
           </>
         );
         break;
+      case "Wait":
+        setText(
+          <>
+            Dear Mohammad,
+            <br />
+            <br />
+            I hope this email finds you well.
+            <br />
+            <br />
+            Please note that I have successfully tested the payment method.
+            <br />
+            <br />
+            Kindly turn off the payment method to prevent your clients from
+            making orders with test cards until we switch your account to live
+            mode. We will notify you as soon as your account is switched to live
+            mode.
+            <br />
+            <br />
+            Additionally, please retain the test product, as we will need it to
+            test the live mode as well. Once we proceed with the live testing,
+            kindly disable the shipping fee to keep the checkout value at 1 USD.
+            <br />
+            <br />
+            Best regards,
+          </>
+        );
+        break;
 
       default:
         setText("Nothing");
@@ -228,6 +255,7 @@ function Homepage() {
             <option value="ShopifyC">Shopify Cyber Source</option>
             <option value="Testing">Testing</option>
             <option value="WPC">WP Credentials</option>
+            <option value="Wait">Waiting for Live Creds</option>
           </select>
         </label>
         <button type="submit">Generate</button>
