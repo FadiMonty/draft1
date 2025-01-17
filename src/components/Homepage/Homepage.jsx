@@ -255,7 +255,7 @@ function Homepage() {
             <option value="ShopifyC">Shopify Cyber Source</option>
             <option value="Testing">Testing</option>
             <option value="WPC">WP Credentials</option>
-            <option value="Wait">Waiting for Live Creds</option>
+            <option value="Wait">Waiting for Live</option>
           </select>
         </label>
         <button type="submit">Generate</button>
